@@ -33,3 +33,32 @@ print(df.head())
 print()
 
 print("-------------------")
+
+# Show Bar Graphs representing the Source City & Destination City
+print(" Show Bar Graphs representing the Source City & Destination City")
+print(df['source_city'].value_counts())
+print()
+
+print("-------------------")
+
+# Show the Source City & Destination City 
+plt.figure(figsize=(16,4))
+
+plt.subplot(1,2,1)
+plt.bar(df['source_city'].value_counts().index,
+        df ['source_city'].value_counts().values ,color=['r' , 'b'])
+
+plt.title("Source City with No. of Flights ")
+plt.ylabel("Cities")
+plt.xlabel("No. of flights")
+
+plt.subplot(1,2,2)
+
+plt.bar(df['destination_city'].value_counts().index,
+        df['destination_city'].value_counts().values , color=['m' , 'g'])
+
+plt.title("Destination_city with No. of Flights ")
+plt.ylabel("Cities")
+plt.xlabel("No. of flights")
+
+plt.show()
