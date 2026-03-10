@@ -193,13 +193,17 @@ git clone https://github.com/Ilmaan-Ahamed/Airlines_Data_Analysis.git
 ### 2. Install Libraries
 
 ```bash
-pip install pandas numpy matplotlib seaborn
+pip install pandas
+pip install numpy
+pip install matplotlib
+pip install seaborn
 ```
 
 ### 3. Run Script
 
 ```bash
-python airline_analysis.py
+python Air_Analysis.py
+python Air_Visualization.py
 ```
 
 ---
@@ -210,7 +214,8 @@ python airline_analysis.py
 Airlines-Data-Analytics
 │
 ├── airlines_flights_data.csv
-├── airline_analysis.py
+├── Air_Analysis.py
+├── Air_Visualization.py
 ├── README.md
 │
 └── images
@@ -224,7 +229,6 @@ Airlines-Data-Analytics
 ## 🚀 Future Improvements
 
 - Add **Machine Learning model for ticket price prediction**
-- Create **Power BI / Tableau dashboard**
 - Build **Streamlit web dashboard**
 
 ---
