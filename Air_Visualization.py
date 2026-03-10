@@ -62,3 +62,44 @@ plt.ylabel("Cities")
 plt.xlabel("No. of flights")
 
 plt.show()
+
+
+
+# Grouping the Price varies with airlines 
+print("Price varies with airlines ")
+df_Pricegrouped = df.groupby('airline')['price'].mean()
+print(df_Pricegrouped)
+print()
+
+print("-------------------")
+
+
+# Drawing a Categorical Plot showing the Mean Ticket Price for each Airline
+
+sns.catplot( x = 'airline', y = 'price', kind = 'bar', palette = 'rocket', data = df, hue = 'class')
+
+plt.show()
+
+# Grouping the Mean Ticket Price based on the Departure times
+print("Mean Ticket Price based on the Departure times")
+df_Deptgrouped = df.groupby('departure_time')['price'].mean()
+print(df_Deptgrouped)
+print()
+
+print("-------------------")
+
+# Grouping the Mean Ticket Price based on the  Arrival Times
+print("Mean Ticket Price based on the Departure times")
+df_Arivagrouped = df.groupby('arrival_time')['price'].mean()
+print(df_Arivagrouped)
+print()
+
+print("-------------------")
+
+# Drawing a Categorical Plot showing the Mean Ticket Price  for each Departure time 
+sns.catplot(x='departure_time', y ='price', kind= 'bar',  data= df)
+plt.show()
+
+# Drawing a Categorical Plot showing the Mean Ticket Price  for each Arriaval time 
+sns.catplot(x='arrival_time', y ='price', kind= 'bar',  data= df)
+plt.show()
