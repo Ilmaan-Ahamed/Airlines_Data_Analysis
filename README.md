@@ -1,82 +1,70 @@
-✈️ Airlines Flights Data Analytics
-📌 Project Overview
+#✈️ Airlines Flights Data Analytics
+
+#📌 Project Overview
 
 This project performs data cleaning, exploration, and visualization on an airline flights dataset using Python Data Analytics libraries.
 The goal is to analyze flight data to understand airline frequencies, pricing trends, and relationships between flight timings and ticket prices.
 
-The analysis helps identify patterns such as:
+#The analysis helps identify patterns such as:
+   Which airlines operate the most flights
+   Average ticket prices by airline
+   Price differences based on departure and arrival times
+   Flight distribution across source and destination cities
 
-Which airlines operate the most flights
-
-Average ticket prices by airline
-
-Price differences based on departure and arrival times
-
-Flight distribution across source and destination cities
-
-📊 Dataset
+#📊 Dataset
 
 The dataset used in this project contains airline flight information such as:
 
-Column	Description
-airline	Name of the airline
-source_city	Departure city
-destination_city	Arrival city
-departure_time	Flight departure time
-arrival_time	Flight arrival time
-duration	Flight duration
-price	Ticket price
-class	Travel class
+Column	            Description
+airline	              Name of the airline
+source_city	      Departure city
+destination_city      Arrival city
+departure_time	      Flight departure time
+arrival_time	      Flight arrival time
+duration	      Flight duration
+price	              Ticket price
+class	              Travel class
 
-Dataset file:
+#Dataset file:
 
 airlines_flights_data.csv
-🛠 Technologies Used
+
+#🛠 Technologies Used
 
 Python
-
 Pandas
-
 NumPy
-
 Matplotlib
-
 Seaborn
+Python Script
 
-Jupyter Notebook / Python Script
-
-Libraries used in the project:
+# Libraries used in the project:
 
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-🧹 Data Cleaning
+
+#🧹 Data Cleaning
 
 The following preprocessing steps were performed:
 
-Removed unnecessary column index
+1.Removed unnecessary column index
+2.Checked dataset structure using .info()
+3.Generated statistical summary using .describe()
+4.Checked missing values using .isnull().sum()
+5.Verified dataset records using .head()
 
-Checked dataset structure using .info()
-
-Generated statistical summary using .describe()
-
-Checked missing values using .isnull().sum()
-
-Verified dataset records using .head()
-
-Example:
+# Example:
 
 df.drop(columns='index', inplace=True)
 df.info()
 df.describe()
-🔍 Exploratory Data Analysis (EDA)
+
+#🔍 Exploratory Data Analysis (EDA)
 Airline Analysis
-
 Counted number of airlines in the dataset
-
 Displayed airline names
-
 Calculated frequency of flights per airline
 
 df['airline'].value_counts()
@@ -84,16 +72,13 @@ df['airline'].unique()
 df['airline'].nunique()
 Price Analysis
 
-The project identifies:
+#The project identifies:
 
 Highest ticket prices
-
 Lowest ticket prices
-
 Average ticket prices by airline
 
-Example:
-
+#Example:
 df.groupby('airline')['price'].mean()
 Duration Analysis
 
