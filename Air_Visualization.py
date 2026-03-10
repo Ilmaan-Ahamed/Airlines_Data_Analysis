@@ -19,3 +19,17 @@ plt.xlabel(" Number of Flights ")
 plt.ylabel(" Airlines ")
 
 plt.show()
+
+# Show Bar Graphs representing the Departure Time & Arrival Time
+print("Representing the Departure Time & Arrival Time")
+print(df.head())
+print()
+
+print("-------------------")
+
+# Show Bar Graphs representing the Departure Time & Arrival Time
+print("Representing the Departure Time & Arrival Time")
+print(df.head())
+print()
+
+print("-------------------")
