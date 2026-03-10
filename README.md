@@ -187,7 +187,7 @@ sns.catplot(
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/airlines-data-analytics.git
+git clone https://github.com/Ilmaan-Ahamed/Airlines_Data_Analysis.git
 ```
 
 ### 2. Install Libraries
