@@ -1,17 +1,17 @@
-#✈️ Airlines Flights Data Analytics
+# ✈️ Airlines Flights Data Analytics
 
-#📌 Project Overview
+# 📌 Project Overview
 
 This project performs data cleaning, exploration, and visualization on an airline flights dataset using Python Data Analytics libraries.
 The goal is to analyze flight data to understand airline frequencies, pricing trends, and relationships between flight timings and ticket prices.
 
-#The analysis helps identify patterns such as:
+# The analysis helps identify patterns such as:
    Which airlines operate the most flights
    Average ticket prices by airline
    Price differences based on departure and arrival times
    Flight distribution across source and destination cities
 
-#📊 Dataset
+# 📊 Dataset
 
 The dataset used in this project contains airline flight information such as:
 
@@ -25,11 +25,11 @@ duration	      Flight duration
 price	              Ticket price
 class	              Travel class
 
-#Dataset file:
+# Dataset file:
 
 airlines_flights_data.csv
 
-#🛠 Technologies Used
+# 🛠 Technologies Used
 
 Python
 Pandas
@@ -45,7 +45,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-#🧹 Data Cleaning
+# 🧹 Data Cleaning
 
 The following preprocessing steps were performed:
 
@@ -61,7 +61,7 @@ df.drop(columns='index', inplace=True)
 df.info()
 df.describe()
 
-#🔍 Exploratory Data Analysis (EDA)
+# 🔍 Exploratory Data Analysis (EDA)
 Airline Analysis
 Counted number of airlines in the dataset
 Displayed airline names
@@ -72,13 +72,13 @@ df['airline'].unique()
 df['airline'].nunique()
 Price Analysis
 
-#The project identifies:
+# The project identifies:
 
 Highest ticket prices
 Lowest ticket prices
 Average ticket prices by airline
 
-#Example:
+# Example:
 df.groupby('airline')['price'].mean()
 Duration Analysis
 
@@ -88,7 +88,7 @@ df[df['duration'] == 49.83]
 df[df['duration'] == 0.83]
 📈 Data Visualization
 
-Several visualizations were created to better understand the data.
+# Several visualizations were created to better understand the data.
 
 1️⃣ Airline Flight Frequency
 
@@ -108,7 +108,7 @@ plt.bar(df['destination_city'].value_counts().index,
         df['destination_city'].value_counts().values)
 3️⃣ Ticket Price by Airline
 
-A categorical plot showing the average ticket price for each airline.
+# A categorical plot showing the average ticket price for each airline.
 
 sns.catplot(
     x='airline',
@@ -129,14 +129,11 @@ Shows how arrival time impacts ticket prices.
 sns.catplot(x='arrival_time', y='price', kind='bar', data=df)
 📊 Key Insights
 
-From the analysis:
+# From the analysis:
 
 Certain airlines operate significantly more flights than others.
-
 Ticket prices vary significantly based on airline and travel class.
-
 Departure and arrival times influence ticket pricing.
-
 Major cities dominate flight traffic.
 
 ▶️ How to Run the Project
@@ -146,7 +143,8 @@ git clone https://github.com/yourusername/airlines-data-analytics.git
 pip install pandas numpy matplotlib seaborn
 3️⃣ Run the Script
 python airline_analysis.py
-📁 Project Structure
+
+# 📁 Project Structure
 Airlines-Data-Analytics
 │
 ├── airlines_flights_data.csv
@@ -156,12 +154,11 @@ Airlines-Data-Analytics
       ├── airline_frequency.png
       ├── city_distribution.png
       └── price_analysis.png
-🚀 Future Improvements
+      
+#🚀 Future Improvements
 
 Add machine learning models to predict ticket prices
-
 Build an interactive dashboard using Power BI / Tableau
-
 Create a web dashboard using Streamlit
 
 👨‍💻 Author
