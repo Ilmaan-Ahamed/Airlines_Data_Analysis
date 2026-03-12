@@ -218,7 +218,7 @@ Airlines-Data-Analytics
 ├── Air_Visualization.py
 ├── README.md
 │
-└── images
+└── Air_Images
     ├── Air_Arrival time.png
     ├── Air_Class.png
     └── Air_Departure time.png
