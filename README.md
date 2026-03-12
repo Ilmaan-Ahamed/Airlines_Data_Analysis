@@ -219,9 +219,12 @@ Airlines-Data-Analytics
 ├── README.md
 │
 └── images
-    ├── airline_frequency.png
-    ├── city_distribution.png
-    └── price_analysis.png
+    ├── Air_Arrival time.png
+    ├── Air_Class.png
+    └── Air_Departure time.png
+    ├── Air_Ar.png
+    ├── Air_Class.png
+    └── Air_Departure time.png
 ```
 
 ---
