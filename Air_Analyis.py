@@ -53,22 +53,22 @@ print()
 print("-------------------")
 
 # Checking how many Airlines are in the dataset
-print(" --------- Checking how many Airlines are in the dataset ---------")
+print(" --------- Checking how many Airlines are in the dataset-ia ---------")
 print(df['airline'].nunique())
 print()
 
 print("-------------------")
 
 # Show how many Airlines Names are in the dataset
-print("--------- Show how many Airlines Names are  in the dataset ---------")
+print("--------- Show how many Airlines Names are  in the dataset-ia ---------")
 print(df['airline'].unique())
 print()
 
 print("-------------------")
 
 # Showing All the Airlines with their Frequencies
-print("--------- Showing All the Airlines with their Frequencies ---------")
+print("--------- Showing All the Airlines with their Frequencies-ia ---------")
 print(df['airline'].value_counts())
 print()
 
-print("--------- The Data Cleaning work is Done  ----------")
+print("--------- The Data Cleaning work is Done by Ilmaan  ----------")
