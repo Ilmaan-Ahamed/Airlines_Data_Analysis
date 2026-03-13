@@ -39,7 +39,7 @@ print(" Show Bar Graphs representing the Source City & Destination City")
 print(df['source_city'].value_counts())
 print()
 
-print("-------------------")
+print("-------ia------------")
 
 # Show the Source City & Destination City 
 plt.figure(figsize=(16,4))
@@ -83,7 +83,7 @@ plt.show()
 # Grouping the Mean Ticket Price based on the Departure times
 print("Mean Ticket Price based on the Departure times")
 df_Deptgrouped = df.groupby('departure_time')['price'].mean()
-print(df_Deptgrouped)
+print(df_Deptgrouped"ia")
 print()
 
 print("-------------------")
@@ -94,7 +94,7 @@ df_Arivagrouped = df.groupby('arrival_time')['price'].mean()
 print(df_Arivagrouped)
 print()
 
-print("-------------------")
+print("-------- code by ia-----------")
 
 # Drawing a Categorical Plot showing the Mean Ticket Price  for each Departure time 
 sns.catplot(x='departure_time', y ='price', kind= 'bar',  data= df)
