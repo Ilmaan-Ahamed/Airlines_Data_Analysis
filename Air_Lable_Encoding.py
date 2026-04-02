@@ -11,3 +11,9 @@ print(df.info)
 
 # identify categorical colunms
 categorical_cols  = ['airline', 'flight', 'source_city', 'destination_city', 'class']
+
+# Apply Lable Encoding 
+le = LabelEncoder()
+
+for col in categorical_cols:
+    df[col] = le.fit_transform(df[col])
