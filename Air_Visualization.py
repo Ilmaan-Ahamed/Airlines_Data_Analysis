@@ -83,7 +83,7 @@ plt.show()
 # Grouping the Mean Ticket Price based on the Departure times
 print("Mean Ticket Price based on the Departure times")
 df_Deptgrouped = df.groupby('departure_time')['price'].mean()
-print(df_Deptgrouped"ia")
+print(df_Deptgrouped, "ia")
 print()
 
 print("-------------------")
