@@ -17,3 +17,10 @@ le = LabelEncoder()
 
 for col in categorical_cols:
     df[col] = le.fit_transform(df[col])
+
+# check Result
+print("========= Label Encoding =========")
+print(df.head)
+
+# Feature Engineering 
+df.drop(columns=['index'], inplace=True)
