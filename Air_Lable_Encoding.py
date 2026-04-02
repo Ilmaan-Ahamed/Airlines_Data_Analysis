@@ -23,4 +23,10 @@ print("========= Label Encoding =========")
 print(df.head)
 
 # Feature Engineering 
-df.drop(columns=['index'], inplace=True)
+# 1 Drop Unnecesary Columns
+df.drop(columns=['index'], inplace=True)\
+
+# 2. create new features 
+df['price_per_hour'] = df['pirce'] / df['duration']
+
+df['urgency'] = df['days_left'].apply(lambda x: 1 if x < 5 else 0)
