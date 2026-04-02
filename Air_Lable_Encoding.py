@@ -8,3 +8,6 @@ print("--------- The All Dataset list ---------")
 
 # Check Data info
 print(df.info)
+
+# identify categorical colunms
+categorical_cols  = ['airline', 'flight', 'source_city', 'destination_city', 'class']
